@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         
       - name: Set up Docker
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
       
       - name: Generate PDF documentation
         run: |
@@ -27,7 +27,7 @@ jobs:
             ghcr.io/kernoeb/docker-docsify-pdf:latest
 
       - name: Upload PDF documentation
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: auxiliary-documentation
           path: pdf/docs.pdf
