@@ -13,3 +13,14 @@
 - [Framework Analysis](framework-analysis.md)
   - [Framework Comparison Table](framework-analysis.md#framework-comparison-table)
   - [Recommendations](framework-analysis.md#recommendations)
+- Framework Templates
+  - Frontend
+    - [Electron](electron.md)
+    - [Qt (PyQt/PySide, Qt Jambi)](qt.md)
+    - [JavaFX](javafx.md)
+    - [Tkinter](tkinter.md)
+  - Backend
+    - [Flask / FastAPI](flask-fastapi.md)
+    - [Spring Boot](spring-boot.md)
+    - [Node.js](nodejs.md)
+    - [C++ REST SDK (Casablanca)](cpp-rest-sdk.md)
