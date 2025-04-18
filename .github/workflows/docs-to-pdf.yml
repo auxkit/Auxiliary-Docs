@@ -44,5 +44,4 @@ jobs:
         with:
           webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           content: 'Generating PDF documentation...'
-          username: 'PDF Generator'
-          filename: 'docs.pdf'
+          filename: 'pdf/docs.pdf'
