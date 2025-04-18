@@ -1,4 +1,4 @@
-# Framework Analysis: Frontend & Backend for Auxiliary Desktop
+# Auxiliary Framework Analysis: Frontend & Backend for Desktop
 
 This page provides a comparative analysis of frameworks suitable for building cross-platform desktop applications, focusing on both frontend and backend technologies. The analysis considers our preferred languages: Python, C++, Java, and JavaScript/TypeScript (JS/TS).
 

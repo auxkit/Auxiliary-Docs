@@ -1,4 +1,4 @@
-# Welcome to Auxiliary Documentation
+# Auxiliary Home
 
 > Internal documentation suite for Auxiliary.
 

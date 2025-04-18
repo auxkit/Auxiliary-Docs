@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started with Auxiliary
 
 Welcome to Auxiliary! We provide advanced software, data science, and mathematical tools to help companies optimize and analyze their data.
 

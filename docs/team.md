@@ -1,4 +1,4 @@
-# Team Directory
+# Auxiliary Team Directory
 
 Meet the Auxiliary team! Our experts in software engineering, data science, and mathematics are here to help you succeed.
 

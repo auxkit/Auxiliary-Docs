@@ -1,4 +1,4 @@
-# Company Policies
+# Auxiliary Company Policies
 
 Auxiliary is committed to delivering high-quality, secure, and ethical solutions. Below are our core company policies:
 

@@ -1,4 +1,4 @@
-# Frequently Asked Questions (FAQ)
+# Auxiliary FAQ
 
 **Q: What services does Auxiliary provide?**
 A: We offer advanced software solutions, data science consulting, and mathematical modeling for business optimization and analytics.
