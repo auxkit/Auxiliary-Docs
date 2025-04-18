@@ -20,6 +20,7 @@ This page provides a comparative analysis of frameworks suitable for building cr
 ---
 
 ## Recommendations
+
 - **Frontend:**
   - **Qt**: Best for native, high-performance UIs in C++, Python, or Java.
   - **Electron**: Best for teams with web development skills or when rapid prototyping and cross-platform support are priorities.
