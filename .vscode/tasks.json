@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open Docsify Documentation",
+            "type": "shell",
+            "command": "npx docsify-cli serve docs",
+            "isBackground": true,
+            "problemMatcher": [],
+            "group": "build",
+            "detail": "Serve the Docsify documentation locally. Open http://localhost:3000 in your browser."
+        }
+    ]
+}
