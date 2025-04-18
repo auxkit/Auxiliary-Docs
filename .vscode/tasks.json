@@ -9,6 +9,14 @@
             "problemMatcher": [],
             "group": "build",
             "detail": "Serve the Docsify documentation locally. Open http://localhost:3000 in your browser."
+        },
+        {
+            "label": "Convert Docsify to PDF",
+            "type": "shell",
+            "command": "./docsify-to-pdf.sh",
+            "problemMatcher": [],
+            "group": "build",
+            "detail": "Create PDF documentation from Docsify using the docker thingy."
         }
     ]
 }
