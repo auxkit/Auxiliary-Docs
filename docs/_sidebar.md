@@ -13,6 +13,7 @@
 - [Framework Analysis](framework-analysis.md)
   - [Framework Comparison Table](framework-analysis.md#framework-comparison-table)
   - [Recommendations](framework-analysis.md#recommendations)
+- [MCP Servers](mcp-server.md)
 - Framework Templates
   - Frontend
     - [Electron](electron.md)
