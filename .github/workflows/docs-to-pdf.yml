@@ -14,12 +14,8 @@ jobs:
       - name: Set up Docker
         uses: docker/setup-buildx-action@v2
       
-      - name: Make script executable
-        run: chmod +x ./docsify-to-pdf.sh
-      
       - name: Generate PDF documentation
         run: |
-          # Modified version of your script for CI environment
           docker pull ghcr.io/kernoeb/docker-docsify-pdf:latest
           mkdir -p ./pdf
           
@@ -27,7 +23,6 @@ jobs:
             --cap-add=SYS_ADMIN \
             -v ${{ github.workspace }}/docs:/home/node/docs:ro \
             -v ${{ github.workspace }}/pdf:/home/node/pdf:rw \
-            -v ${{ github.workspace }}/resources/covers/cover.pdf:/home/node/resources/cover.pdf:ro \
             -e "PDF_OUTPUT_NAME=docs.pdf" \
             ghcr.io/kernoeb/docker-docsify-pdf:latest
 
