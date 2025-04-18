@@ -13,7 +13,9 @@ jobs:
         
       - name: Set up Docker
         uses: docker/setup-buildx-action@v3
-      
+
+
+    
       - name: Generate PDF documentation
         run: |
           docker pull ghcr.io/kernoeb/docker-docsify-pdf:latest
@@ -36,3 +38,11 @@ jobs:
         with:
           name: auxiliary-documentation
           path: pdf/docs.pdf
+          
+      - name: Discord Webhook Action
+        uses: tsickert/discord-webhook@v7.0.0
+        with:
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          content: 'Generating PDF documentation...'
+          username: 'PDF Generator'
+          filename: 'docs.pdf'
