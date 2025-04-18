@@ -17,12 +17,17 @@ jobs:
       - name: Generate PDF documentation
         run: |
           docker pull ghcr.io/kernoeb/docker-docsify-pdf:latest
-          mkdir -p ./pdf
           
+          # Create pdf directory and set permissions for user 1000 (node user in container)
+          mkdir -p ./pdf
+          sudo chown 1000:1000 ./pdf
+          
+          # Run the container (still without the cover.pdf volume)
           docker run --rm \
             --cap-add=SYS_ADMIN \
             -v ${{ github.workspace }}/docs:/home/node/docs:ro \
             -v ${{ github.workspace }}/pdf:/home/node/pdf:rw \
+            -v ${{ github.workspace }}/resources/covers/cover.pdf:/home/node/resources/cover.pdf:ro \
             -e "PDF_OUTPUT_NAME=docs.pdf" \
             ghcr.io/kernoeb/docker-docsify-pdf:latest
 
