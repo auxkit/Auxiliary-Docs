@@ -27,7 +27,7 @@ jobs:
             ghcr.io/kernoeb/docker-docsify-pdf:latest
 
       - name: Upload PDF documentation
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.3
         with:
           name: auxiliary-documentation
           path: pdf/docs.pdf
