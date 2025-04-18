@@ -3,10 +3,6 @@ name: Generate PDF Documentation
 on:
   push:
     branches: [ main, master ]
-    paths:
-      - 'docs/**'
-      - 'resources/**'
-      - 'docsify-to-pdf.sh'
 
 jobs:
   convert_to_pdf:
@@ -22,7 +18,18 @@ jobs:
         run: chmod +x ./docsify-to-pdf.sh
       
       - name: Generate PDF documentation
-        run: ./docsify-to-pdf.sh
+        run: |
+          # Modified version of your script for CI environment
+          docker pull ghcr.io/kernoeb/docker-docsify-pdf:latest
+          mkdir -p ./pdf
+          
+          docker run --rm \
+            --cap-add=SYS_ADMIN \
+            -v ${{ github.workspace }}/docs:/home/node/docs:ro \
+            -v ${{ github.workspace }}/pdf:/home/node/pdf:rw \
+            -v ${{ github.workspace }}/resources/covers/cover.pdf:/home/node/resources/cover.pdf:ro \
+            -e "PDF_OUTPUT_NAME=docs.pdf" \
+            ghcr.io/kernoeb/docker-docsify-pdf:latest
 
       - name: Upload PDF documentation
         uses: actions/upload-artifact@v3
