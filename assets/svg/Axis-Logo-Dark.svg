@@ -7,8 +7,11 @@
    width="2730.6667"
    height="2730.6667"
    viewBox="0 0 2730.6667 2730.6667"
-   sodipodi:docname="Axis-Logo.svg"
+   sodipodi:docname="Axis-Logo-Dark.svg"
    inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   inkscape:export-filename="../png/Axis-Logo-Dark.png"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -40,7 +43,7 @@
   </defs>
   <sodipodi:namedview
      id="namedview1"
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
@@ -55,7 +58,8 @@
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer-MC0">
+     inkscape:current-layer="svg1"
+     inkscape:export-bgcolor="#000000ff">
     <inkscape:page
        x="0"
        y="0"
@@ -67,20 +71,25 @@
        bleed="0" />
   </sodipodi:namedview>
   <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="fill:#000000;fill-opacity:1" />
+  <g
      id="layer-MC0"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <path
        id="path1"
        d="M 0,0 C 0,0 -537.696,1075.391 -537.696,1433.855 L -1433.855,0 0,1433.855"
-       style="fill:none;stroke:#231f20;stroke-width:38.00025095;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;opacity:1;fill-opacity:1;stroke-dashoffset:0;paint-order:normal"
+       style="fill:none;stroke:#ffffff;stroke-width:38.00025095;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;opacity:1;fill-opacity:1;stroke-dashoffset:0;paint-order:normal"
        transform="matrix(1.3333333,0,0,-1.3333333,2321.2365,2321.2365)"
        clip-path="url(#clipPath2)"
        sodipodi:nodetypes="cccc" />
     <path
        id="path3"
        d="M 0,0 74.945,234.859 -159.915,159.915 159.916,319.83 Z"
-       style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-opacity:1"
        transform="matrix(1.3333333,0,0,-1.3333333,2164.6628,779.22333)"
        clip-path="url(#clipPath4)"
        sodipodi:nodetypes="ccccc" />
