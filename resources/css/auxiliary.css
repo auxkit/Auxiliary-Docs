@@ -624,6 +624,51 @@ body {
   color: var(--theme-color, #ea6f5a);
   font-weight: 600;
 }
+/* Sidebar collapse/expand icons customization */
+.sidebar-nav li > a:not(.section-link) {
+  position: relative;
+}
+
+.sidebar-nav li.folder > a:not(.section-link):before {
+  content: '+';
+  position: absolute;
+  right: 12px;
+  color: #ea6f5a;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.sidebar-nav li.folder.open > a:not(.section-link):before {
+  content: '-';
+  transform: rotate(0deg);
+}
+
+.sidebar-nav li.folder:hover > a:not(.section-link):before {
+  color: #f5877a;
+}
+
+/* Fix for nested folders indentation */
+.sidebar-nav ul.app-sub-sidebar {
+  margin-left: 15px !important;
+}
+
+/* Improve visual distinction between nested levels */
+.sidebar-nav ul.app-sub-sidebar li a {
+  font-size: 13px;
+  color: #a6a6a6;
+}
+
+/* Animation for sidebar collapsing */
+.sidebar-nav ul.app-sub-sidebar {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.sidebar-nav li.folder.open > ul.app-sub-sidebar {
+  max-height: 1000px; /* Large enough to fit all content */
+}
 /* markdown content found on pages */
 .markdown-section h1,
 .markdown-section h2,

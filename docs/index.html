@@ -7,6 +7,8 @@
   <meta name="description" content="Auxiliary Internal Documentation">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="auxiliary.css" />
+  <!-- Add the sidebar collapse plugin CSS -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-collapse.min.css" />
 </head>
 <body>
   <button class="dark-mode-toggle" id="darkModeToggle">🌙 Dark Mode</button>
@@ -19,12 +21,17 @@
       alias: {
       '/.*/_sidebar.md': '/_sidebar.md',
       },
-      subMaxLevel: 3,
-      sidebarDisplayLevel: 1,
+      subMaxLevel: 0,
+      sidebarDisplayLevel: 0, // Change from 1 to 0 to keep all sections closed by default
       themeColor: '#A55C55',
       coverpage: false,
       auto2top: true,
       search: 'auto',
+      // Add this configuration to control sidebar collapse behavior
+      sidebarCollapseOptions: {
+        collapseButton: true,
+        expandButton: true
+      }
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
