@@ -24,5 +24,5 @@
   - [Developer Guide](axis/developer-guide.md)
   - [Configuration](axis/configuration.md)
   - [FAQs](axis/faq.md)
-  - [Release Notes](axis/releases.md)
+  <!-- - [Release Notes](axis/releases.md) -->
   - [Roadmap](axis/roadmap.md)
