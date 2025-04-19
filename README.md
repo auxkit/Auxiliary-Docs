@@ -12,15 +12,6 @@ This repository contains supplementary documentation that can be viewed through 
 - PDF export capability
 - Clean, searchable documentation interface
 
-## Setup
-
-1. Clone this repository
-2. Install dependencies:
-
-```bash
-npm install
-```
-
 ## Usage
 
 ### Viewing Documentation
@@ -32,6 +23,8 @@ npx docsify-cli serve docs
 ```
 
 Then visit `http://localhost:3000` in your browser.
+
+(This requires installing the docsify cli on your computer. See Docsify documentation for more info)
 
 ### Exporting to PDF
 
