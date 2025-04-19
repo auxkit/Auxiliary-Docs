@@ -55,9 +55,7 @@ gantt
 
 ## Release Plans
 
-### Version 1.0.0
-
-**Initial Public Release**
+### Version 1.0.0: Initial Public Release
 
 The first official release of Axis will provide a Windows desktop assistant powered by MCP Server capabilities.
 
@@ -144,21 +142,25 @@ Further enhancements will include:
 Our long-term roadmap for Axis includes:
 
 ### Multi-Platform Support
+
 - Expanding to macOS and Linux platforms
 - Ensuring consistent experience across operating systems
 
 ### Advanced AI Integration
+
 - Deeper AI capabilities with specialized domain knowledge
 - Improved personalization based on usage patterns
 - Enhanced context understanding capabilities
 
 ### Enterprise Features
+
 - Advanced team collaboration features
 - Centralized deployment and management
 - Company-specific knowledge integration
 - Enhanced security and compliance features
 
 ### Ecosystem Expansion
+
 - Rich marketplace for third-party extensions
 - Integration with more third-party services and applications
 - Open APIs for broader developer engagement
@@ -181,6 +183,7 @@ Your feedback is essential for shaping Axis's future. Please share your suggesti
 - Beta tester forum: [beta.auxiliary.com/axis](https://beta.auxiliary.com/axis)
 
 We particularly value feedback on:
+
 - Feature requests
 - Performance issues
 - User experience pain points
