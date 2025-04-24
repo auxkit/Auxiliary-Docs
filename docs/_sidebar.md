@@ -26,4 +26,6 @@
   - [Configuration](axis/configuration.md)
   - [FAQs](axis/faq.md)
   <!-- - [Release Notes](axis/releases.md) -->
-  - [Roadmap](axis/roadmap.md)
+- [Axis Project Developer](axis-dev/info.md)
+  - [Roadmap](axis-dev/roadmap.md)
+  - [System Architecture](axis-dev/architecture.md)
