@@ -29,3 +29,5 @@
 - [Axis Project Developer](axis-dev/info.md)
   - [Roadmap](axis-dev/roadmap.md)
   - [System Architecture](axis-dev/architecture.md)
+  - [Detailed Overview](axis-dev/detailed.md)
+  - [Detailed Overview 2](axis-dev/detailed2.md)

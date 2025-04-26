@@ -1,68 +1,56 @@
 # Axis Installation Guide
 
-This guide provides detailed instructions for installing Axis on Windows.
+Axis is a cross-platform desktop assistant built with Python and Qt (PySide6). Follow these steps to install and verify Axis on your system.
 
-## System Requirements
+## Prerequisites
 
-- **Operating System**: Windows 10 (version 1903 or newer) or Windows 11
-- **Processor**: Dual-core 2.0 GHz or higher (Quad-core 2.4 GHz recommended)
-- **Memory**: Minimum 4GB RAM (8GB recommended)
-- **Storage**: 500MB for application, additional space for cache and data
-- **Display**: 1280x720 resolution or higher (1080p recommended)
-- **Internet**: Broadband connection for cloud features
+- Python 3.9 or newer (3.11+ recommended)
+- pip package manager
+- Qt 6 runtime libraries (for PySide6)
+  - On Linux: install via your distro (e.g., `sudo apt install python3-pyside6 qt6-qml-runtime`)
+  - On macOS: install via Homebrew (`brew install pyside6`)
+  - On Windows: download and install the Qt runtime or use the PySide6 wheels
 
-## Windows Installation
+## Installing Axis
 
-1. Download the Axis installer from the [official portal](https://auxiliary.com/axis/download)
-2. Right-click on the downloaded `Axis-Setup.exe` file and select "Run as administrator"
-3. If prompted by User Account Control (UAC), click "Yes" to allow the installation
-4. Review and accept the End User License Agreement
-5. Choose your installation location or use the default
-6. Select which components to install:
-   - Core Application (required)
-   - Desktop Shortcut
-   - Start Menu Entry
-   - File Explorer Integration
-   - Windows Search Integration
-7. Click "Install" to begin the installation process
-8. Once completed, click "Finish" to exit the installer
+Option 1: Install from PyPI
 
-The application will launch automatically after installation if you selected that option.
+```bash
+pip install auxiliary-axis
+```
 
-## Post-Installation Setup
+Option 2: Install from source
 
-After installing Axis, you'll need to complete the following setup steps:
+```bash
+git clone https://github.com/auxiliary/auxiliary-axis.git
+cd auxiliary-axis
+pip install -r requirements.txt
+pip install .
+```
 
-1. **First-run Configuration**: The initial setup wizard will guide you through:
-   - Creating an Auxiliary account or signing in with existing credentials
-   - Setting up necessary Windows permissions
-   - Configuring performance settings
-   - Setting privacy preferences
+## Verifying the Installation
 
-2. **Windows Integration**: Grant permissions when prompted to enable deeper Windows integration features like:
-   - File system access
-   - Application control
-   - Notification management
-   - Clipboard access
+Run Axis in development mode:
 
-3. **Network Setup**: Configure network settings if you're behind a corporate firewall or need to use a proxy
+```bash
+axis  # if installed via pip
+# or from source:
+python main.py
+```
 
-## Troubleshooting
+You should see the Axis icon appear in your system tray and the assistant window.
 
-If you encounter issues during installation:
+## Bundling for Distribution
 
-- **Installation Fails**: Make sure you have administrator privileges and try running the installer again
-- **Windows Defender Alerts**: You may need to add an exclusion for Axis in Windows Security
-- **Missing Prerequisites**: Ensure your Windows is up to date with the latest updates
+To create standalone binaries:
 
-For additional help:
+- **PyInstaller**: add a spec that includes Qt and QML resources, then:
+  ```bash
+  pyinstaller main.py --onefile --add-data 'data:./data' --add-data 'qml:./qml'
+  ```
 
-- Review the installation logs at `%APPDATA%\Auxiliary\Axis\logs\install.log`
-- Check the [installation FAQs](faq.md#installation)
-- Contact [support](mailto:axis-support@auxiliary.com) with details of your issue
+- **Linux AppImage**: use linuxdeploy and appimage toolchains
+- **macOS**: use `py2app` or a bundled installer
+- **Windows**: create an installer with `Inno Setup` or `WiX` including the Qt runtime
 
-## Next Steps
-
-- [Quick Start Tutorial](quickstart.md)
-- [Configuration Options](configuration.md)
-- [User Manual](user-manual.md)
+Refer to the official packaging tools for detailed instructions.

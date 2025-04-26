@@ -19,6 +19,27 @@ This page provides a comparative analysis of frameworks suitable for building cr
 
 ---
 
+## UI Effects & Transparency Requirements
+
+To build a visually rich, transparent, always‑on‑screen assistant (think Bonzi Buddy style), these options are worth considering:
+
+| Framework           | Transparency | Animations & 2D/3D Effects | Notes |
+|---------------------|--------------|----------------------------|-------|
+| **Qt (PySide/PyQt)**| Full window and widget translucency, custom shapes via `setMask` | Hardware‑accelerated via Qt Quick and QML | Mature, consistent cross‑platform support; great for custom‑shaped windows and interactive animations |
+| **Electron**        | Supports transparent BrowserWindow (`transparent: true`), CSS animations | Leverages CSS/Canvas/WebGL | Easy web‑tech styling; however, large bundle and higher memory usage |
+| **Flutter Desktop** | Alpha channel support on Windows, macOS (macOS support improving on Linux) | Rich Skia‑powered UI and animations | Fast development with Dart; smaller bundle than Electron; some desktop APIs still in beta |
+| **Godot Engine**    | Full 2D/3D engine, transparent window flags, custom rendering pipeline | Advanced 2D/3D, skeletal animation, shaders | Ideal for character‑driven assistants; more game‑engine oriented development |
+| **Unity**           | Transparent windows with custom build settings; extensive rendering API | Full 3D, particle systems, shader graph | Overkill for simple apps but unmatched animation pipeline; larger runtime |
+
+**Key considerations**:
+- Memory/size vs. visual fidelity trade‑off
+- Familiarity with language and toolchain (QML vs. web vs. game engine)
+- Packaging and platform support maturity
+
+Choose a UI layer based on desired art style, animation complexity, and team expertise.
+
+---
+
 ## Recommendations
 
 - **Frontend:**

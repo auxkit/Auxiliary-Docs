@@ -1,63 +1,47 @@
-# Axis Quick Start Guide
+# Axis Quickstart Guide
 
-This guide will help you get started with Axis, the Windows desktop assistant powered by MCP Server capabilities.
+This quick guide helps you launch and use Axis on Windows, macOS, and Linux.
 
 ## First Launch
 
-After [installing Axis](installation.md), launch the application by:
+After installing Axis (see [Installation Guide](installation.md)), start the application by:
 
-1. Double-clicking the Axis desktop icon, or
-2. Searching for "Axis" in the Windows Start menu
+- Running `axis` in a terminal (if installed via pip)
+- Or from source: `python main.py`
 
-On first launch, you'll see the welcome screen and initial setup wizard.
+On first launch, Axis displays a brief welcome overlay and registers a tray icon or menu bar item.
 
-## Initial Setup
+## Basic UI Walkthrough
 
-The setup wizard will guide you through:
+- **System Tray / Menu Bar Icon**: Click to open or hide the assistant window.
+- **Main Window**: Contains:
+  - **Command Bar** at the top for typing or pasting requests
+  - **Response Panel** below for results, suggestions, or rich content
+  - **Context Sidebar** optional panel showing active context information
 
-1. **Account Creation/Login**: Create an Auxiliary account or log in with existing credentials
-2. **Permission Settings**: Configure system access permissions required by Axis
-3. **Feature Selection**: Choose which Axis capabilities to enable
-4. **Integration Options**: Connect Axis to your favorite applications
-5. **Personalization**: Customize appearance and behavior preferences
+- **Global Hotkey**: Press <kbd>Ctrl</kbd>+<kbd>Space</kbd> (default) to toggle visibility of the main window.
 
-## The Axis Interface
+## Running Your First Command
 
-![Axis Interface](../assets/axis-interface.png)
+1. Focus the Command Bar.
+2. Type `Hello Axis` and press <kbd>Enter</kbd>.
+3. The assistant will introduce itself and list available commands.
 
-The Axis interface consists of:
+### Sample Commands
 
-- **Command Bar**: Type or speak your requests here
-- **Response Area**: View Axis responses and suggestions
-- **Context Panel**: Shows current context and active applications
-- **Quick Actions**: Frequently used commands and macros
-- **System Tray Icon**: For quick access and status information
+- `Open Calculator` – Launches the system calculator.
+- `Search files for report` – Finds matching files in your workspace.
+- `Summarize document` – Summarizes text copied to the clipboard.
+- `What’s the weather in London?` – Retrieves weather info via integrated API.
 
-## Basic Commands
+## Exiting Axis
 
-Try these commands to get started:
-
-- `"Hello Axis"` - Introduces Axis and lists capabilities
-- `"Open [application name]"` - Launches the specified application
-- `"Find files about [topic]"` - Searches for relevant files
-- `"Summarize this document"` - Summarizes the active document
-- `"Monitor system resources"` - Shows current system performance
-- `"Set a reminder for [time] to [task]"` - Creates a reminder
-
-## Context-Aware Features
-
-Axis understands your work context:
-
-1. **Active Application Awareness**: Commands adapt to your current application
-2. **Document Context**: Axis can reference content in open documents
-3. **Task Continuity**: Axis remembers previous commands in the current session
-4. **Location Awareness**: Commands can reference file locations and workspace
+- Click the tray/menu icon and select **Quit**, or
+- Press the hotkey twice quickly, or
+- Close the main window with the window controls.
 
 ## Next Steps
 
-- Explore the [User Manual](user-manual.md) for detailed instructions
-- Configure advanced options in the [Configuration Guide](configuration.md)
-- Set up integrations with your tools and services
-- Create custom commands and workflows
-
-For additional help, use the command `"Axis help"` or contact support at <axis-support@auxiliary.com>.
+- Read the [User Manual](user-manual.md) for detailed feature descriptions.
+- Configure preferences in the [Configuration Guide](configuration.md).
+- Explore writing your own extensions in the [Extension System](extension-system.md).

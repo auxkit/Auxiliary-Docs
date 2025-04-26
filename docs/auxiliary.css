@@ -890,3 +890,97 @@ input[type='search'] {
 .sidebar-nav li.folder.open > ul.app-sub-sidebar {
   max-height: 1000px; /* Large enough to fit all content */
 }
+
+/* Mermaid diagrams styling */
+.mermaid {
+  background-color: #2d2d2d;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+/* General text and background styling */
+.mermaid text {
+  fill: #c8c8c8 !important;
+  stroke: none;
+}
+
+/* Entity styling (nodes, boxes, etc.) */
+.mermaid .node rect, 
+.mermaid .node circle, 
+.mermaid .node ellipse, 
+.mermaid .node polygon, 
+.mermaid .node path {
+  fill: #3f3f3f !important;
+  stroke: #ea6f5a !important;
+  stroke-width: 1px;
+}
+
+/* Entity labels */
+.mermaid .label {
+  color: #c8c8c8;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Diagram edges/lines/relationships */
+.mermaid .edgePath .path,
+.mermaid line,
+.mermaid path.relation {
+  stroke: #ea6f5a !important;
+  stroke-width: 1.5px;
+}
+
+/* Arrowheads */
+.mermaid .arrowheadPath,
+.mermaid marker path {
+  fill: #ea6f5a !important;
+  stroke: none !important;
+}
+
+/* Cluster backgrounds */
+.mermaid .cluster rect {
+  fill: #353535 !important;
+  stroke: #5a5a5a !important;
+}
+
+/* Actor styling (sequence diagrams) */
+.mermaid .actor {
+  fill: #3f3f3f !important;
+  stroke: #ea6f5a !important;
+}
+
+/* Flowchart styling */
+.mermaid .flowchart-link {
+  stroke: #ea6f5a !important;
+}
+
+/* Gantt chart styling */
+.mermaid .section0,
+.mermaid .section2 {
+  fill: #4a4a4a !important;
+  opacity: 0.6;
+}
+.mermaid .section1,
+.mermaid .section3 {
+  fill: #3a3a3a !important;
+  opacity: 0.6;
+}
+.mermaid .taskText {
+  fill: #c8c8c8 !important;
+}
+.mermaid .taskRect {
+  fill: #ea6f5a !important;
+  stroke: #ea6f5a !important;
+}
+.mermaid .active0,
+.mermaid .active1 {
+  fill: #ea6f5a !important;
+  stroke: #ea6f5a !important;
+}
+.mermaid .milestone {
+  fill: #3f3f3f !important;
+  stroke: #ea6f5a !important;
+}
+.mermaid .today {
+  stroke: #ffcc00 !important;
+}
