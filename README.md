@@ -1,42 +1,23 @@
 # Auxiliary-Docs
 
-A repository for auxiliary documentation using Docsify.
+Internal documentation for Auxiliary Software
 
 ## Overview
 
-This repository contains supplementary documentation that can be viewed through Docsify and exported to PDF format. It serves as a centralized location for reference materials and guides.
+This repository contains internal documentation for Auxiliary Software's products, services, and processes. The standard technology stack is Electron for the frontend and Python + FastAPI for the backend. It serves as a centralized knowledge base for team members.
 
-## Features
+## Contents
 
-- Documentation organized with a sidebar navigation
-- PDF export capability
-- Clean, searchable documentation interface
+- Product specifications
+- Development guidelines
+- API documentation
+- Troubleshooting guides
+- Onboarding materials
 
 ## Usage
 
-### Viewing Documentation
+Documentation is organized by department and project. Navigate to the relevant section using the sidebar.
 
-To view the documentation locally:
+## Contact
 
-```bash
-npx docsify-cli serve docs
-```
-
-Then visit `http://localhost:3000` in your browser.
-
-(This requires installing the docsify cli on your computer. See Docsify documentation for more info)
-
-### Exporting to PDF
-
-The documentation can be exported to PDF using:
-
-```bash
-npm run convert
-```
-
-The generated PDF will be stored at `pdf/docs.pdf`.
-
-## Structure
-
-- `/docs` - Documentation source files
-- `/pdf` - Generated PDF output
+For questions about this documentation, contact the Documentation Team at <docs@auxiliary.example.com>.

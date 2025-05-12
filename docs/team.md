@@ -1,13 +1,3 @@
-# Auxiliary Team Directory
+# Auxiliary Team Directory (Deprecated)
 
-Meet the Auxiliary team! Our experts in software engineering, data science, and mathematics are here to help you succeed.
-
-## Leadership
-
-- **Founder:** Seamus Mullan
-
-## Engineering
-
-- Engineers: TBD
-
-For a full team list or to contact a specific member, please email <team@auxiliary.com>.
+Team directory information is now included in the main [About Auxiliary](about.md) documentation. Please refer to that file for all team and contact information.
