@@ -179,12 +179,14 @@ sequenceDiagram
 Axis’s extensibility comes from its plugin-based (skills) architecture. Developers can add new skills by creating plugins that adhere to a simple interface. Each plugin is typically a separate file or module, placed in a designated plugins directory. At startup, `PluginManager` scans this directory, loads plugins, and registers them.
 
 Each plugin must implement at least two functions or methods:
+
 - `canHandle(query: string) -> bool`: Returns true if the plugin can process the given query. This could be based on keyword matching, intent detection, or explicit trigger phrases.
 - `execute(query: string, context: dict) -> string`: Performs the plugin’s action and returns a response string. The `context` includes objects like the `LocalResourceManager` and an `MCPClient` for optional AI access. Plugins should not block the main thread; long-running tasks can be asynchronous.
 
 Plugins declare in their metadata whether they are **local-only** or **AI-enabled**. A local plugin will run entirely via code (using `LocalResourceManager` if needed). An AI plugin will likely use `MCPClient` to call the LLM (for example, sending the query to the LLM and formatting the answer). The QueryRouter uses this metadata to route queries appropriately.
 
 The plugin system allows versatile skill development. For example:
+
 - *Local Skill Example:* A `CalendarPlugin` that reads/writes events from a local SQLite calendar database. It uses `LocalResourceManager` to query or update the DB and returns schedule information.
 - *AI Skill Example:* A `SummaryPlugin` that takes a long text snippet and returns a summary. It sends the text to the MCPServer (using `MCPClient`) and outputs the model’s summary.
 
@@ -256,5 +258,4 @@ To implement this specification, developers should:
 6. **Demonstration Plugins:** Create example plugins to validate the system (one local-skill plugin, one AI-powered plugin). Test the query routing logic and adjust as needed.
 7. **Expert Mode Features:** Add logging, configuration dialogs, and verbose output for Expert Mode.
 
-With this design, Axis can be developed iteratively: starting with basic UI and local commands, then adding the plugin loader, and finally integrating the local AI model. The architecture ensures the assistant has a useful core of local functionality while allowing easy expansion through both local code and AI-powered features. Each component has a clear interface, so a small dev team can implement and test modules in parallel. 
-
+With this design, Axis can be developed iteratively: starting with basic UI and local commands, then adding the plugin loader, and finally integrating the local AI model. The architecture ensures the assistant has a useful core of local functionality while allowing easy expansion through both local code and AI-powered features. Each component has a clear interface, so a small dev team can implement and test modules in parallel.

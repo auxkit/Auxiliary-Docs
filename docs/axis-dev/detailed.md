@@ -188,9 +188,9 @@ In this chart, each task has a *start date* and *duration*. Overlapping is allow
 Axis will follow **Semantic Versioning (SemVer)** ([Semantic Versioning 2.0.0 | Semantic Versioning](https://semver.org/#:~:text=2,1.11.0)). The version number is MAJOR.MINOR.PATCH.  
 
 - **0.y.z (Alpha):** During initial development, Axis will use 0.y.z versions. As per semver, “Major version zero (0.y.z) is for initial development. Anything MAY change at any time. The public API SHOULD NOT be considered stable.” ([Semantic Versioning 2.0.0 | Semantic Versioning](https://semver.org/#:~:text=4,SHOULD%20NOT%20be%20considered%20stable)). Each alpha release (e.g. 0.1.0, 0.2.0) corresponds to feature sets. Breaking changes are expected in this phase.
-- **1.0.0 (Beta):** Once the core features are implemented and the API (if any) is defined, Axis 1.0.0 will be the first beta/stable milestone. According to SemVer, “Version 1.0.0 defines the public API.” ([Semantic Versioning 2.0.0 | Semantic Versioning](https://semver.org/#:~:text=4,SHOULD%20NOT%20be%20considered%20stable)) After 1.0.0, increments follow standard rules: 
-  - **Patch (x.y.Z):** Backward-compatible bug fixes. 
-  - **Minor (x.Y.z):** New backward-compatible functionality. 
+- **1.0.0 (Beta):** Once the core features are implemented and the API (if any) is defined, Axis 1.0.0 will be the first beta/stable milestone. According to SemVer, “Version 1.0.0 defines the public API.” ([Semantic Versioning 2.0.0 | Semantic Versioning](https://semver.org/#:~:text=4,SHOULD%20NOT%20be%20considered%20stable)) After 1.0.0, increments follow standard rules:
+  - **Patch (x.y.Z):** Backward-compatible bug fixes.
+  - **Minor (x.Y.z):** New backward-compatible functionality.
   - **Major (X.y.z):** Incompatible changes.
 - **Pre-release labels:** For pre-release milestones, use semantic labels (e.g. 1.0.0-alpha, 1.0.0-beta). This clarifies stability. For example, 0.5.0-alpha could be an early alpha build, while 1.0.0-beta indicates release candidate quality.
 
